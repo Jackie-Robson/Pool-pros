@@ -1,0 +1,40 @@
+<img src="../assets/img/water-image.png" alt="An Image to look like the surface of water being broken accross the screen.">
+<div class="filter">
+	<div id="dealerCount">
+		<p></p>
+	</div>
+	<span><div></div></span>
+	<div id="filterBtnContainer">
+		<label>Filter Results</label>
+		<a id="filterBtn" class="ss-dropdown"></a>
+	</div>
+
+	<div id="filterContainer" class="hideFilter">
+	<form id="filterForm"  action="index.html" method="post">
+		<div>
+			<label  class="container">Service
+	  <input class="option" id="service" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Installation
+	  <input class="option" id="installation" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Residential
+	  <input class="option" id="residential" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Comercial
+	  <input class="option" id="comercial" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+		<img src="../assets/img/tool-tip-icon-filtering.png" alt="">
+	</label>
+</div>
+
+
+		</div>
+
+	</form>
+
+
+</div>

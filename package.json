@@ -1,0 +1,27 @@
+{
+  "name": "pool-pros",
+  "version": "1.0.0",
+  "description": "FED test for Jackie Robson",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jackie-Robson/Pool-pros.git"
+  },
+  "author": "Jackie Robson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jackie-Robson/Pool-pros/issues"
+  },
+  "homepage": "https://github.com/Jackie-Robson/Pool-pros#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nunjucks": "^3.1.1"
+  },
+  "devDependencies": {
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.2"
+  }
+}

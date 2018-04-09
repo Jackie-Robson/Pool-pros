@@ -1,0 +1,134 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../scss/index.css">
+		<link rel="stylesheet" href="../assets/fonts/ss-pika/webfonts/ss-pika.css">
+    <title>Pool Pros</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+<header>
+	<div class="headerTop">
+		<ul>
+		<li><a href="#">Dealers and Distributers</a></li>
+		<p>|</p>
+		<li><a href="#">Comercial Service <img src="../assets/img/action-commercial-icon.png" alt="comercial services action icon"></li></a>
+		<hr>
+	</div>
+
+	<div class="headerBottom">
+		<img src="../assets/img/pool-pros-logo.png" alt="Pool Pros logo">
+
+
+		<button type="button" name="Find a pro"><img src="../assets/img/location-icon.png" alt="location icon">Find a <span>Pool</span> Pro</button>
+		<img src="../assets/img/menu-icon-mobile.png" id="menuBtn" alt=" Menu icon">
+
+		<div id="menu" class="hide">
+			<img id="menuClose" src="../assets/img/x.png">
+			<p>Menu</p>
+			<a href="#">Pools and Spas<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">Supplies<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">Resources<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">services<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+		</div>
+
+	</div>
+</header>
+
+<img src="../assets/img/water-image.png" alt="An Image to look like the surface of water being broken accross the screen.">
+<div class="filter">
+	<div id="dealerCount">
+		<p></p>
+	</div>
+	<span><div></div></span>
+	<div id="filterBtnContainer">
+		<label>Filter Results</label>
+		<a id="filterBtn" class="ss-dropdown"></a>
+	</div>
+
+	<div id="filterContainer" class="hideFilter">
+	<form id="filterForm"  action="index.html" method="post">
+		<div>
+			<label  class="container">Service
+	  <input class="option" id="service" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Installation
+	  <input class="option" id="installation" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Residential
+	  <input class="option" id="residential" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+	</label>
+	<label class="container">Comercial
+	  <input class="option" id="comercial" type="checkbox"  name="checkbox">
+	  <span class="checkmark"></span>
+		<img src="../assets/img/tool-tip-icon-filtering.png" alt="">
+	</label>
+</div>
+
+
+		</div>
+
+	</form>
+
+
+</div>
+
+<ul id="results">
+
+</ul>
+
+<footer>
+	<div class="footerTop">
+
+		<img src="../assets/img/pool-pros-logo-footer.png" alt="Pool pros log in the footer">
+
+		<div>
+			<p>connect with us</p>
+			<img href="#" src="../assets/img/twitter-icon.png" alt="Connect with us via Twitter ">
+			<img href="#" src="../assets/img/facebook-icon.png" alt="Connect with us via Facebook">
+			<img href="#" src="../assets/img/youtube-icon.png" alt="Check us out on YouTube">
+		</div>
+	</div>
+
+	<div class="footerBottom">
+		<ul>
+			<li>
+				<a href="#">Dealers and Distributers</a>
+			</li>
+			<p>|</p>
+			<li>
+				<a href="#">Comercial Service <img src="../assets/img/action-commercial-icon.png" alt="comercial services action icon"></a>
+			</li>
+		</ul>
+			<hr>
+			<p> &#169;2018 Pool Pros</p>
+			<p>|</p>
+			<a href="#">Privacy Policy</a>
+			<p>|</p>
+			<a href="#">Terms and Conditions</a>
+
+	</div>
+
+</footer>
+
+
+
+
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script  src="app/js/dealerFilter.js"></script>
+		<script  src="app/js/pageLogic.js" > </script>
+		<link async chref="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </body>
+</html>

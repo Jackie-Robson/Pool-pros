@@ -1,0 +1,65 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+.hide{
+	@media screen and (max-width: 990px){
+		transform: scaleY(0);
+	}
+}
+@media screen and (max-width: 990px){
+	.hideFilter{
+		display: none;
+		transform: translatey( -1000px);
+		transition: 0;
+	}
+}
+// fonts
+@font-face {
+    font-family:'Open Sans';
+    src:local('Open Sans'),
+        url('../assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family:'Open Sans Semibold';
+    src:local('Opan Sans Semibold'),
+        url('../assets/fonts/OpenSans-SemiBold.ttf');
+    font-weight:bold;
+}
+
+@font-face{
+    font-family:'Open Sans Extrabold';
+    src:local('Open Sans Extrabold'),
+        url('../assets/fonts/OpenSans-ExtraBold.ttf');
+    font-weight:bolder;
+}
+@font-face{
+    font-family:'Open Sans Light';
+    src:local('Open Sans Light'),
+        url('../assets/fonts/OpenSans-Light.ttf');
+    font-weight:lighter;
+}
+@font-face {
+    font-family:'SS Pika';
+    src:url('../assets/fonts/ss-pika/ss-pika.otf') format('otf'),
+        url('../assets/fonts/ss-pika/webfonts/ss-pika.eot') format('eot'),
+        url('../assets/fonts/ss-pika/webfonts/ss-pika.svg') format('svg'),
+        url('../fassets/onts/ss-pika/webfonts/ss-pika.ttf') format('ttf'),
+        url('../assets/fonts/ss-pika/webfonts/ss-pika.woff') format('woff');
+}
+
+
+body > img{
+	width: 100vw;
+	position: absolute;
+	margin-top: 3px;
+
+	@media screen and (max-width: 990px){
+		margin-top: -3em;
+	}
+	z-index: -1
+}

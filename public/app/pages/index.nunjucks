@@ -1,0 +1,10 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/_header.nunjucks" %}
+{% include "partials/_filter.nunjucks" %}
+{% include "partials/_gallery.nunjucks" %}
+{% include "partials/_footer.nunjucks" %}
+
+{% endblock %}

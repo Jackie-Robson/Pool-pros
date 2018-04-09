@@ -1,0 +1,27 @@
+<header>
+	<div class="headerTop">
+		<ul>
+		<li><a href="#">Dealers and Distributers</a></li>
+		<p>|</p>
+		<li><a href="#">Comercial Service <img src="../assets/img/action-commercial-icon.png" alt="comercial services action icon"></li></a>
+		<hr>
+	</div>
+
+	<div class="headerBottom">
+		<img src="../assets/img/pool-pros-logo.png" alt="Pool Pros logo">
+
+
+		<button type="button" name="Find a pro"><img src="../assets/img/location-icon.png" alt="location icon">Find a <span>Pool</span> Pro</button>
+		<img src="../assets/img/menu-icon-mobile.png" id="menuBtn" alt=" Menu icon">
+
+		<div id="menu" class="hide">
+			<img id="menuClose" src="../assets/img/x.png">
+			<p>Menu</p>
+			<a href="#">Pools and Spas<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">Supplies<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">Resources<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+			<a href="#">services<img class="next-arrow" src="../assets/img/next-arrow.png"></a>
+		</div>
+
+	</div>
+</header>

@@ -1,0 +1,546 @@
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+body {
+  margin: 0; }
+
+@media screen and (max-width: 990px) {
+  .hide {
+    transform: scaleY(0); } }
+
+@media screen and (max-width: 990px) {
+  .hideFilter {
+    display: none;
+    transform: translatey(-1000px);
+    transition: 0; } }
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans"), url("../assets/fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: local("Opan Sans Semibold"), url("../assets/fonts/OpenSans-SemiBold.ttf");
+  font-weight: bold; }
+@font-face {
+  font-family: 'Open Sans Extrabold';
+  src: local("Open Sans Extrabold"), url("../assets/fonts/OpenSans-ExtraBold.ttf");
+  font-weight: bolder; }
+@font-face {
+  font-family: 'Open Sans Light';
+  src: local("Open Sans Light"), url("../assets/fonts/OpenSans-Light.ttf");
+  font-weight: lighter; }
+@font-face {
+  font-family: 'SS Pika';
+  src: url("../assets/fonts/ss-pika/ss-pika.otf") format("otf"), url("../assets/fonts/ss-pika/webfonts/ss-pika.eot") format("eot"), url("../assets/fonts/ss-pika/webfonts/ss-pika.svg") format("svg"), url("../fassets/onts/ss-pika/webfonts/ss-pika.ttf") format("ttf"), url("../assets/fonts/ss-pika/webfonts/ss-pika.woff") format("woff"); }
+body > img {
+  width: 100vw;
+  position: absolute;
+  margin-top: 3px;
+  z-index: -1; }
+  @media screen and (max-width: 990px) {
+    body > img {
+      margin-top: -3em; } }
+
+header {
+  height: 8em;
+  margin-bottom: 1px; }
+  header #menuBtn {
+    display: none; }
+  header #menu a img {
+    display: none; }
+  header #menuClose {
+    display: none; }
+  header .headerTop {
+    margin: none;
+    padding: .5em 4em;
+    background-color: #083d8c;
+    height: 1.5em; }
+    header .headerTop ul {
+      margin: 0;
+      float: right;
+      display: inline; }
+      header .headerTop ul li {
+        display: inline; }
+    header .headerTop p {
+      display: none; }
+    header .headerTop hr {
+      display: none; }
+    header .headerTop a {
+      text-decoration: none;
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+      margin: 0.2em 1em auto 1em; }
+      header .headerTop a img {
+        height: .85em; }
+  header .headerBottom {
+    padding: 0 5em;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25); }
+    header .headerBottom img {
+      display: inline;
+      height: 30px;
+      margin: 2em 0; }
+    header .headerBottom div {
+      display: inline;
+      margin: 2.5em 1em 2.5em 0;
+      float: right; }
+      header .headerBottom div p {
+        display: none; }
+      header .headerBottom div a {
+        font-size: .9em;
+        text-decoration: none;
+        color: #083d8c;
+        font-weight: 600;
+        margin: 2em 1em; }
+    header .headerBottom button {
+      font-size: 1em;
+      padding: .7em;
+      float: right;
+      margin: 1.7em 0;
+      border-radius: 3px;
+      border-color: #3271E0;
+      border-width: 1.5px;
+      outline: none;
+      background-color: transparent;
+      color: #3271E0;
+      font-weight: 500;
+      cursor: pointer; }
+      header .headerBottom button img {
+        height: 1em;
+        margin: .05em 5px; }
+  @media screen and (max-width: 990px) {
+    header #menuClose {
+      display: block; }
+    header #menu a img {
+      display: block; }
+    header #menuBtn {
+      display: inline;
+      position: absolute;
+      right: .2em;
+      top: .2em;
+      height: 4em;
+      margin: 0;
+      z-index: 200; } }
+  @media screen and (max-width: 990px) and (max-width: 320px) {
+    header #menuBtn {
+      height: 4.5em; } }
+  @media screen and (max-width: 990px) {
+    header .headerTop {
+      display: none; }
+    header .headerBottom {
+      padding: 0; }
+      header .headerBottom img {
+        display: inline;
+        height: 1.2em;
+        margin: 1em 0 1em .3em; }
+      header .headerBottom div {
+        transition: .5s;
+        border-top: 5px solid #5FCAC9;
+        border-bottom: 5px solid #5FCAC9;
+        background-color: white;
+        position: absolute;
+        top: 57px;
+        right: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 100;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.25); }
+        header .headerBottom div img {
+          float: right;
+          margin-right: 1em; }
+        header .headerBottom div p {
+          display: block;
+          margin: 0;
+          width: 100vw;
+          height: 2em;
+          padding: 1em 0;
+          text-align: center;
+          background-color: white;
+          color: #3271E0;
+          font-weight: 600;
+          font-size: 1.5em; }
+        header .headerBottom div a {
+          background-color: #F6F6F6;
+          height: 2em;
+          padding: 2em 1em;
+          text-align: left;
+          display: block;
+          width: calc(100vw - 2em);
+          margin: 0;
+          border-top: 3px solid white;
+          color: #616161; }
+      header .headerBottom button {
+        display: inline;
+        margin: .8em 8em .8em 0;
+        padding: 1em;
+        font-size: .7em;
+        float: right;
+        top: 0; } }
+  @media screen and (max-width: 990px) {
+    header span {
+      display: none; }
+    header .headerBottom img {
+      height: 1.2em; } }
+
+body > header > img {
+  z-index: -1;
+  position: absolute;
+  top: 9em;
+  width: 100%; }
+  @media screen and (max-width: 990px) {
+    body > header > img {
+      top: 5em; } }
+
+footer .footerTop {
+  width: 100%;
+  padding: 2em 0;
+  text-align: center;
+  background-color: #083D8C;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold; }
+  footer .footerTop img {
+    display: inline;
+    height: 30px; }
+  footer .footerTop div {
+    margin-top: 1em; }
+    footer .footerTop div p {
+      display: inline;
+      margin-right: 2em; }
+    footer .footerTop div img {
+      height: 20px;
+      margin: 0 0.6em;
+      cursor: pointer; }
+footer .footerBottom {
+  background-color: #216CDF;
+  color: white;
+  text-align: center;
+  font-size: 0.6em;
+  padding: 1em 0; }
+  footer .footerBottom p {
+    display: inline;
+    margin: 0.5em; }
+  footer .footerBottom a {
+    text-decoration: none;
+    color: white;
+    margin: 0; }
+  footer .footerBottom ul {
+    display: none;
+    list-style: none; }
+    footer .footerBottom ul li {
+      display: none;
+      display: inline; }
+      footer .footerBottom ul li img {
+        height: 10px;
+        margin-left: 5px; }
+      footer .footerBottom ul li a {
+        float: none;
+        margin-bottom: 0.5em; }
+      footer .footerBottom ul li p {
+        display: inline;
+        color: white; }
+  footer .footerBottom hr {
+    display: none; }
+  @media screen and (max-width: 990px) {
+    footer .footerBottom {
+      display: block; }
+      footer .footerBottom ul {
+        display: block; }
+      footer .footerBottom hr {
+        display: block;
+        width: 270px;
+        margin-top: 1em; } }
+
+.filter {
+  border-radius: 10px;
+  width: calc(98vw - 4em);
+  max-width: 1320px;
+  padding: 2em;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.5em;
+  height: 6em;
+  z-index: 5; }
+  @media screen and (max-width: 900px) {
+    .filter {
+      margin-top: 0; } }
+  .filter span div {
+    margin: -.8em 1em;
+    height: 50px;
+    border-right: 2px solid #ececec; }
+  .filter div {
+    display: inline;
+    color: #216CDF;
+    font-weight: bold;
+    font-size: 1em;
+    float: left; }
+    .filter div p {
+      margin-top: 0;
+      margin-right: 1em; }
+    .filter div label {
+      display: inline;
+      margin-left: 1em;
+      font-weight: 600;
+      font-size: 1em;
+      color: #3f3f3f; }
+    .filter div a {
+      text-decoration: none;
+      color: #3f3f3f;
+      background-color: none; }
+      @media screen and (min-width: 990px) {
+        .filter div a {
+          display: none; } }
+  .filter form {
+    display: inline;
+    color: black; }
+  .filter div {
+    display: inline;
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* On mouse-over, add a grey background color */
+    /* When the radio button is checked, add a blue background */
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Show the indicator (dot/circle) when checked */
+    /* Style the indicator (dot/circle) */ }
+    .filter div .container {
+      display: inline;
+      position: relative;
+      padding-left: 35px;
+      margin-top: 2em;
+      margin-bottom: 12px;
+      margin-left: 2em;
+      cursor: pointer;
+      font-size: 0.8em;
+      color: #929292;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    .filter div .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    .filter div .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid grey; }
+    .filter div .container:hover input ~ .checkmark {
+      background-color: #ccc; }
+    .filter div .container input:checked ~ .checkmark {
+      background-color: #206CDF; }
+    .filter div .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .filter div .container input:checked ~ .checkmark:after {
+      display: block; }
+    .filter div .container .checkmark:after {
+      top: 6px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: #F5F5F6; }
+    .filter div img {
+      height: 20px;
+      transform: translate(0, 5px);
+      margin-left: 5px; }
+  @media screen and (max-width: 990px) {
+    .filter {
+      width: 100vw;
+      text-align: left;
+      max-height: 1000px;
+      position: absolute;
+      padding: 2em 1em; }
+      .filter span div {
+        display: none; }
+      .filter p {
+        display: inline;
+        margin: 0; }
+      .filter div {
+        border: none; }
+      .filter #dealercount {
+        margin: auto; }
+      .filter #results {
+        border: none;
+        float: left;
+        padding: 0.5em;
+        background-color: white; }
+        .filter #results p {
+          margin: 0; }
+      .filter #filterBtnContainer {
+        display: inline;
+        background-color: white;
+        border: 2px solid #ececec;
+        padding: 0.5em;
+        float: right;
+        margin: -10px 10px;
+        padding-right: 0; }
+        .filter #filterBtnContainer a {
+          display: inline;
+          background-color: #F5F5F6;
+          text-decoration: none;
+          color: #3f3f3f;
+          padding: 0.8em 1.22em;
+          font-size: 0.8em;
+          padding-right: 21px;
+          padding-bottom: 9px; }
+      .filter #filterContainer {
+        background-color: white;
+        margin-top: 18px; }
+      .filter form {
+        display: block; }
+        .filter form div {
+          box-sizing: border-box;
+          width: calc(98vw - 4em);
+          max-width: 1320px;
+          display: block;
+          background-color: white;
+          border: 1px solid #d8d8d8;
+          padding: 0;
+          margin: -9px 2em; }
+          .filter form div .container {
+            display: block;
+            font-size: 16px;
+            text-align: left; }
+            .filter form div .container label {
+              max-width: 100%;
+              color: #3f3f3f;
+              display: inline;
+              padding: 0 0.8em;
+              margin-left: 0;
+              float: left; } }
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95vw;
+  list-style: none;
+  z-index: 1;
+  margin-bottom: 8em;
+  position: relative;
+  top: 0; }
+  @media screen and (max-width: 500px) {
+    #results {
+      top: 5.5em;
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto; } }
+  #results li {
+    width: 400px;
+    margin: 1em auto;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31); }
+    #results li .title {
+      height: 100px;
+      border-bottom: 1px solid #3f3f3f24; }
+      #results li .title h2 {
+        font-family: "Open Sans Light";
+        font-size: 2em; }
+    #results li .desktopNumber {
+      margin-top: 1em;
+      font-size: 1.5em; }
+      #results li .desktopNumber span {
+        font-family: 'Open Sans Extrabold';
+        color: #3f3f3f; }
+      #results li .desktopNumber img {
+        height: 1.5em;
+        vertical-align: text-bottom;
+        margin-right: 10px; }
+    #results li .mobileNumber {
+      display: none; }
+    #results li p {
+      font-size: 0.8em;
+      font-style: italic; }
+    #results li .emailContact {
+      margin: 2em auto;
+      border: 2px solid #4dd8d7;
+      border-radius: 5px;
+      padding: 0.7em;
+      width: 150px; }
+      #results li .emailContact a {
+        text-decoration: none;
+        color: #4366a1; }
+      #results li .emailContact img {
+        height: 1em;
+        margin-right: 0.7em; }
+    #results li .businessHours {
+      font-size: 0.8em; }
+      #results li .businessHours h5 {
+        font-family: "Open Sans Semibold";
+        font-size: 1em;
+        margin: 0.5em auto 0; }
+    #results li .certifications {
+      text-align: left;
+      height: 80px;
+      margin: 1em 0 0;
+      padding: 1em;
+      background-color: #F6F6F6;
+      color: #787878;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      #results li .certifications ul {
+        width: 300px;
+        column-count: 2;
+        column-width: 100px;
+        margin: 0 auto;
+        padding: 0; }
+        #results li .certifications ul li {
+          margin: 1em 0;
+          font-size: .8em;
+          display: inline-flex;
+          box-shadow: none; }
+          #results li .certifications ul li img {
+            height: 15px;
+            display: inline;
+            margin-right: 10px; }
+    @media screen and (max-width: 500px) {
+      #results li {
+        border-radius: 0;
+        margin: 0 auto; }
+        #results li .certifications {
+          border-radius: 0; }
+        #results li .desktopNumber {
+          display: none; }
+        #results li .mobileNumber {
+          margin: 1em auto;
+          max-height: 50px;
+          width: 250px;
+          display: block;
+          background-color: #216CDF;
+          padding: 1em 1em;
+          font-size: .5em; }
+          #results li .mobileNumber a {
+            display: inline;
+            text-align: center;
+            vertical-align: middle;
+            color: white;
+            text-decoration: none; }
+            #results li .mobileNumber a span {
+              margin-left: .7em;
+              font-size: 2em;
+              font-family: "Open Sans Extrabold"; }
+            #results li .mobileNumber a img {
+              height: 25px;
+              margin: auto 1em;
+              margin-left: 0;
+              display: inline;
+              float: left; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,33 @@
+<footer>
+	<div class="footerTop">
+
+		<img src="../assets/img/pool-pros-logo-footer.png" alt="Pool pros log in the footer">
+
+		<div>
+			<p>connect with us</p>
+			<img href="#" src="../assets/img/twitter-icon.png" alt="Connect with us via Twitter ">
+			<img href="#" src="../assets/img/facebook-icon.png" alt="Connect with us via Facebook">
+			<img href="#" src="../assets/img/youtube-icon.png" alt="Check us out on YouTube">
+		</div>
+	</div>
+
+	<div class="footerBottom">
+		<ul>
+			<li>
+				<a href="#">Dealers and Distributers</a>
+			</li>
+			<p>|</p>
+			<li>
+				<a href="#">Comercial Service <img src="../assets/img/action-commercial-icon.png" alt="comercial services action icon"></a>
+			</li>
+		</ul>
+			<hr>
+			<p> &#169;2018 Pool Pros</p>
+			<p>|</p>
+			<a href="#">Privacy Policy</a>
+			<p>|</p>
+			<a href="#">Terms and Conditions</a>
+
+	</div>
+
+</footer>
