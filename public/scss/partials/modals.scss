@@ -1,0 +1,280 @@
+#modals {
+	.modal {
+		transition: 0.735s;
+		list-style: none;
+		position: fixed;
+		z-index: 800;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.1);
+		color: white;
+
+		.modalContainer {
+			background-color: #fefefe;
+			margin: 15% auto;
+			width: 570px;
+			@media screen and (max-width: 550px) {
+				width: 320px;
+				font-size: 0.8em;
+			};
+
+			.modalTop {
+				background-color: #083d8c;
+				padding: 0.5em;
+
+				p {
+					margin: 0.5em 1em;
+					display: inline;
+					color: white;
+				}
+
+				h2 {
+					margin: 0.5em;
+				}
+
+				a {
+					display: inline;
+					float: right;
+					cursor: pointer;
+					z-index: 97;
+				}
+			}
+		}
+
+		p {
+			color: black;
+			margin: 2em;
+		}
+
+		form {
+			width: 80%;
+			padding: 2em;
+			background-color: #F6F6F6;
+			color: black;
+			margin: 1em auto;
+			@media screen and(max-width: 550px) {
+				padding: 0.5em;
+				background-color: white;
+			}
+
+			label {
+				input {
+					width: 90%;
+					height: 3em;
+					margin: 2em 0;
+					display: block;
+					background-color: white;
+					border: 2px solid lightgrey;
+				}
+
+				textarea {
+					width: 90%;
+					display: block;
+					height: 8em;
+					margin-top: 15px;
+					border: 2px solid lightgrey;
+				}
+			}
+
+			.poolRadio-lg {
+				@media screen and (max-width:550px) {
+					display: none;
+				}
+
+				p {
+					margin: 2em 0;
+				}
+
+				.container {
+					display: inline;
+					position: relative;
+					margin-bottom: 12px;
+					cursor: pointer;
+					font-size: 18px;
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+				}
+
+				.container input {
+					position: absolute;
+					opacity: 0;
+					cursor: pointer;
+				}
+
+				.checkmark {
+					margin-right: 10px;
+					top: 0;
+					left: 0;
+					margin-right: 10px;
+					border: 2px solid #9F9E9F;
+					background-color: #f6f6f6;
+					color: #9F9E9F;
+					border-radius: 10px;
+					padding: 0.2em 1em;
+				}
+
+				.container:hover input ~ .checkmark {
+					background-color: #ccc;
+				}
+
+				.container input:checked ~ .checkmark {
+					background-color: #5EC8C7;
+					color: white;
+				}
+
+				.checkmark:after {
+					content: "";
+					position: absolute;
+					display: block;
+					right: 10px;
+				}
+
+				.container input:checked ~ .checkmark:after {
+					display: block;
+				}
+			}
+		}
+
+		.poolRadio-sm {
+			@media screen and (min-width: 550px) {
+				display: none;
+			}
+
+			p {
+				margin-left: 0;
+			}
+
+			.container {
+				font-size: 0.8em;
+				display: inline;
+				position: relative;
+				padding-left: 35px;
+				margin: 10px 10px 12px;
+				cursor: pointer;
+				font-size: 22px;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				margin-right: 5px;
+			}
+			/* Hide the browser's default radio button */
+			.container input {
+				position: absolute;
+				opacity: 0;
+				cursor: pointer;
+			}
+			/* Create a custom radio button */
+			.checkmark {
+				position: absolute;
+				top: 10px;
+				left: 0;
+				height: 15px;
+				width: 15px;
+				background-color: #eee;
+				border-radius: 5px;
+				border: 2px solid grey;
+			}
+			/* On mouse-over, add a grey background color */
+			.container:hover input ~ .checkmark {
+				background-color: #ccc;
+			}
+			/* When the radio button is checked, add a blue background */
+			.container input:checked ~ .checkmark {
+				background-color: #2196F3;
+			}
+			/* Create the indicator (the dot/circle - hidden when not checked) */
+			.checkmark:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+			/* Show the indicator (dot/circle) when checked */
+			.container input:checked ~ .checkmark:after {
+				display: block;
+			}
+			/* Style the indicator (dot/circle) */
+			.container .checkmark:after {
+				top: 5px;
+				left: 5px;
+				width: 5px;
+				height: 5px;
+				border-radius: 5px;
+				background: white;
+			}
+		}
+
+		hr {
+			margin-top: 3em;
+			border-top: 1px solid #f0f0f0;
+
+			@media screen and (max-widt:550px){
+				margin-bottom: 2em;
+			}
+		}
+
+		.send {
+			width: 300px;
+			margin: 2em auto;
+
+			@media screen and (max-width:550px) {
+
+				margin: 0;
+
+				p{
+					font-size: 1.5em;
+					color: #5EC8C7;
+					padding: 2em;
+					margin-left: 8em;
+
+					span{
+						display: none;
+					}
+				}
+
+				a {
+						display: none;
+				}
+			}
+
+			p {
+				text-align: center;
+				display: inline;
+				cursor: pointer;
+			}
+
+			img {
+				cursor: pointer;
+				height: 20px;
+				display: inline;
+			}
+		}
+
+		.terms {
+			@media screen and (max-width: 550px){
+				p{
+					display:none;
+				}
+				background-color: white;
+			}
+			margin-top: 3em;
+			width: calc(100%- 1em);
+			background-color: #f6f6f6;
+			padding: 0.5em 1em;
+
+			p {
+				color: #ababab;
+				font-size: 0.6em;
+			}
+		}
+	}
+}
+
+.hide {
+	display: none;
+}

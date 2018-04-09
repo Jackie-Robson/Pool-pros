@@ -4,7 +4,8 @@
   "description": "FED test for Jackie Robson",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js"
+    "styles": "node app.js | sass --w public/scss",
+		"compile": " gulp nunjucks | sass --w public/scss | node app.js"
   },
   "repository": {
     "type": "git",

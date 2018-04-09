@@ -1,0 +1,204 @@
+#modals .modal {
+  transition: 0.735s;
+  list-style: none;
+  position: fixed;
+  z-index: 800;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white; }
+  #modals .modal .modalContainer {
+    background-color: #fefefe;
+    margin: 15% auto;
+    width: 570px; }
+    @media screen and (max-width: 550px) {
+      #modals .modal .modalContainer {
+        width: 320px;
+        font-size: 0.8em; } }
+    #modals .modal .modalContainer .modalTop {
+      background-color: #083d8c;
+      padding: 0.5em; }
+      #modals .modal .modalContainer .modalTop p {
+        margin: 0.5em 1em;
+        display: inline;
+        color: white; }
+      #modals .modal .modalContainer .modalTop h2 {
+        margin: 0.5em; }
+      #modals .modal .modalContainer .modalTop a {
+        display: inline;
+        float: right;
+        cursor: pointer;
+        z-index: 97; }
+  #modals .modal p {
+    color: black;
+    margin: 2em; }
+  #modals .modal form {
+    width: 80%;
+    padding: 2em;
+    background-color: #F6F6F6;
+    color: black;
+    margin: 1em auto; }
+    @media screen and (max-width: 550px) {
+      #modals .modal form {
+        padding: 0.5em;
+        background-color: white; } }
+    #modals .modal form label input {
+      width: 90%;
+      height: 3em;
+      margin: 2em 0;
+      display: block;
+      background-color: white;
+      border: 2px solid lightgrey; }
+    #modals .modal form label textarea {
+      width: 90%;
+      display: block;
+      height: 8em;
+      margin-top: 15px;
+      border: 2px solid lightgrey; }
+    @media screen and (max-width: 550px) {
+      #modals .modal form .poolRadio-lg {
+        display: none; } }
+    #modals .modal form .poolRadio-lg p {
+      margin: 2em 0; }
+    #modals .modal form .poolRadio-lg .container {
+      display: inline;
+      position: relative;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+    #modals .modal form .poolRadio-lg .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    #modals .modal form .poolRadio-lg .checkmark {
+      margin-right: 10px;
+      top: 0;
+      left: 0;
+      margin-right: 10px;
+      border: 2px solid #9F9E9F;
+      background-color: #f6f6f6;
+      color: #9F9E9F;
+      border-radius: 10px;
+      padding: 0.2em 1em; }
+    #modals .modal form .poolRadio-lg .container:hover input ~ .checkmark {
+      background-color: #ccc; }
+    #modals .modal form .poolRadio-lg .container input:checked ~ .checkmark {
+      background-color: #5EC8C7;
+      color: white; }
+    #modals .modal form .poolRadio-lg .checkmark:after {
+      content: "";
+      position: absolute;
+      display: block;
+      right: 10px; }
+    #modals .modal form .poolRadio-lg .container input:checked ~ .checkmark:after {
+      display: block; }
+  #modals .modal .poolRadio-sm {
+    /* Hide the browser's default radio button */
+    /* Create a custom radio button */
+    /* On mouse-over, add a grey background color */
+    /* When the radio button is checked, add a blue background */
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    /* Show the indicator (dot/circle) when checked */
+    /* Style the indicator (dot/circle) */ }
+    @media screen and (min-width: 550px) {
+      #modals .modal .poolRadio-sm {
+        display: none; } }
+    #modals .modal .poolRadio-sm p {
+      margin-left: 0; }
+    #modals .modal .poolRadio-sm .container {
+      font-size: 0.8em;
+      display: inline;
+      position: relative;
+      padding-left: 35px;
+      margin: 10px 10px 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-right: 5px; }
+    #modals .modal .poolRadio-sm .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    #modals .modal .poolRadio-sm .checkmark {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      height: 15px;
+      width: 15px;
+      background-color: #eee;
+      border-radius: 5px;
+      border: 2px solid grey; }
+    #modals .modal .poolRadio-sm .container:hover input ~ .checkmark {
+      background-color: #ccc; }
+    #modals .modal .poolRadio-sm .container input:checked ~ .checkmark {
+      background-color: #2196F3; }
+    #modals .modal .poolRadio-sm .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    #modals .modal .poolRadio-sm .container input:checked ~ .checkmark:after {
+      display: block; }
+    #modals .modal .poolRadio-sm .container .checkmark:after {
+      top: 5px;
+      left: 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background: white; }
+  #modals .modal hr {
+    margin-top: 3em;
+    border-top: 1px solid #f0f0f0; }
+    @media screen and (max-widt: 550px) {
+      #modals .modal hr {
+        margin-bottom: 2em; } }
+  #modals .modal .send {
+    width: 300px;
+    margin: 2em auto; }
+    @media screen and (max-width: 550px) {
+      #modals .modal .send {
+        margin: 0; }
+        #modals .modal .send p {
+          font-size: 1.5em;
+          color: #5EC8C7;
+          padding: 2em;
+          margin-left: 8em; }
+          #modals .modal .send p span {
+            display: none; }
+        #modals .modal .send a {
+          display: none; } }
+    #modals .modal .send p {
+      text-align: center;
+      display: inline;
+      cursor: pointer; }
+    #modals .modal .send img {
+      cursor: pointer;
+      height: 20px;
+      display: inline; }
+  #modals .modal .terms {
+    margin-top: 3em;
+    width: calc(100%- 1em);
+    background-color: #f6f6f6;
+    padding: 0.5em 1em; }
+    @media screen and (max-width: 550px) {
+      #modals .modal .terms {
+        background-color: white; }
+        #modals .modal .terms p {
+          display: none; } }
+    #modals .modal .terms p {
+      color: #ababab;
+      font-size: 0.6em; }
+
+.hide {
+  display: none; }
+
+/*# sourceMappingURL=modals.css.map */

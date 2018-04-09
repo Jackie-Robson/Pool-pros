@@ -5,7 +5,7 @@ var data = require('gulp-data');
 
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  return gulp.src('./public/app/pages/**/*.+(html|nunjucks)')
 	// adds the data to nunjucks
 	.pipe(data(function(){
 		return require('./public/app/dealers.json')
@@ -15,7 +15,7 @@ gulp.task('nunjucks', function() {
       path: ['public/app/templates']
     }))
   // output files in app folder
-  .pipe(gulp.dest('app'))
+  .pipe(gulp.dest('public/app'))
 
 
 });
